@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-MACH-CARD</title>
+    <style>
+        #card{
+    width: 500px;
+    height: 500px;
+    border: 5px solid lightgreen;
+    margin: 100px auto;
+    perspective: 500px;
+}
+        #card .face,
+        #card .back{
+    width: inherit;
+    height: inherit;
+}
+        #card .face{
+    background-size: cover;
+    background-image: url(https://previews.123rf.com/images/tanialerro/tanialerro1906/tanialerro190600101/128914863-green-leaves-watercolor-hand-drawn-raster-frame-template-olive-branches-corners-with-copy-space-flor.jpg);
+
+}
+        #card .back{
+    transform: translateY(-500px);
+    transform-origin: left;
+    transition: 2.5s;
+    background-image: url(https://www.grainstorebrewery.com/site/wp-content/uploads/Mothers-Day.jpg);
+    background-size: cover;
+}
+        #card:hover .back{
+    transform: translateY(-500px) rotateY(180deg);    
+    opacity: 0%;
+}
+        #card .face>h1{
+    background-color: #fff7;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    color: rgb(223, 88, 88);
+    font-style: italic;
+}
+        #card .face>h2{
+    background-color: #fff7;
+    text-align:center;
+    color: lightseagreen;
+    font-style: italic;
+}
+    </style>
+</head>
+<body>
+    <main id="card">
+        <div class="face"><br/><br/><br/><br/><br/>
+            <h1>Поздравляю с 8 МАРТА</h1>
+            <h2>Моя мамочка родная,<br/>
+                Я люблю тебя без края!<br/>
+                С 8 Марта поздравляю,<br/>
+                Счастья я тебе желаю.<br/>
+                Много света, доброты,<br/>
+                Исполнения мечты,<br/>
+                Радости на много лет.<br/>
+                Тебя лучше в мире нет!</h2></div>
+        <div class="back"></div>
+        <audio src="http://cdn1.pesnigoo.ru/uploads/files/2017-08/001-luis-fonsi-daddy-yankee-despacito.mp3" autoplay="autoplay" ></audio>
+    </main>
+</body>
+</html>
